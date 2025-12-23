@@ -1,0 +1,100 @@
+.input {
+  &__field {
+    padding: 19px 20px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary-200);
+    transition:
+      color 0.35s,
+      border 0.35s;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+
+    &[type="number"] {
+      appearance: textfield;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-200);
+      transition: color 0.35s;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+
+      &::placeholder {
+        color: var(--color-primary);
+      }
+    }
+
+    &:focus,
+    &:active {
+      color: var(--color-black);
+
+      &::placeholder {
+        color: var(--color-black);
+      }
+    }
+
+    &:disabled {
+      color: var(--color-primary-200);
+      border-color: var(--color-primary-200);
+
+      &::placeholder {
+        color: var(--color-primary-200);
+      }
+    }
+
+    &--area {
+      resize: none;
+      height: 120px;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--primary-300 {
+      background-color: var(--color-primary-300);
+      border-color: var(--color-primary-300);
+
+      &::placeholder {
+        color: var(--color-primary);
+      }
+
+      &:hover {
+        color: var(--color-primary-500);
+
+        &::placeholder {
+          color: var(--color-primary-500);
+        }
+      }
+
+      &:focus,
+      &:active {
+        color: var(--color-black);
+
+        &::placeholder {
+          color: var(--color-black);
+        }
+      }
+
+      &:disabled {
+        background-color: var(--color-grey);
+        color: var(--color-primary-200);
+
+        &::placeholder {
+          color: var(--color-primary-200);
+        }
+      }
+    }
+  }
+}

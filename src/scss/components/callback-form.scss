@@ -1,0 +1,39 @@
+.callback-form {
+  padding: 12px;
+  background-color: var(--color-primary-100);
+  border-radius: 8px;
+
+  &__main {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__input {
+    flex: 1 1 0%;
+  }
+
+  &__submit {
+    flex: 1 1 0%;
+  }
+
+  &__privacy {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__privacy-text {
+    margin-top: 3px;
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      flex-direction: column;
+    }
+
+    &__privacy {
+      max-width: 205px;
+    }
+  }
+}

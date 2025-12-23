@@ -1,0 +1,42 @@
+.menu {
+  &__list {
+    margin-left: -12px;
+    margin-top: -4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    margin-left: 12px;
+    margin-top: 4px;
+  }
+
+  &__item-submenu {
+    margin-top: 24px;
+    left: -27px;
+
+    &--left-xs {
+      left: -7px;
+    }
+  }
+
+  &__link {
+    .icon__img {
+      fill: var(--color-black);
+      transition: fill 0.35s;
+    }
+
+    &:hover {
+      .icon__img {
+        fill: var(--color-primary-500);
+      }
+    }
+
+    &:active {
+      .icon__img {
+        fill: var(--color-primary);
+      }
+    }
+  }
+}

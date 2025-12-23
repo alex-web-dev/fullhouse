@@ -1,0 +1,28 @@
+.container {
+  max-width: calc(var(--container-width) + var(--container-offset) * 2);
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+
+  &--fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    &--xl {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 var(--container-offset-mobile);
+
+    &--xl,
+    &--md {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

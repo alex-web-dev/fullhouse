@@ -1,0 +1,13 @@
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  &__icon {
+    flex: none;
+  }
+
+  &__label {
+    margin-top: 8px;
+  }
+}

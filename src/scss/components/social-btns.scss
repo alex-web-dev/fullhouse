@@ -1,0 +1,29 @@
+.social-btns {
+  &__list {
+    margin-top: -4px;
+    margin-left: -4px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 4px;
+    margin-left: 4px;
+
+    &--media-xl {
+      display: none;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+
+  @media (max-width: 1200px) {
+    &__item {
+      &--media-xl {
+        display: flex;
+      }
+    }
+  }
+}

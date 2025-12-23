@@ -1,0 +1,163 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--color-primary-100);
+
+  &__columns {
+    margin-top: -32px;
+    margin-left: -32px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: calc(25% - 32px);
+  }
+
+  &__label {
+    margin: 0 auto 20px;
+
+    &--w-sm {
+      max-width: 196px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 240px;
+    max-width: 100%;
+  }
+
+  &__slogan {
+    max-width: 220px;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__social-btns {
+    margin-top: 20px;
+  }
+
+  &__contact {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+
+    &--w-sm {
+      max-width: 197px;
+    }
+
+    &--gap-xs {
+      gap: 12px;
+    }
+  }
+
+  &__item-value {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
+  &__channel {
+    padding: 12px 12px 0;
+    background-color: var(--color-white);
+    border-radius: 8px;
+  }
+
+  &__channel-title {
+    &--w-sm {
+      max-width: 160px;
+    }
+  }
+
+  &__channel-img {
+    margin: 12px auto 0;
+    width: 115px;
+  }
+
+  &__btn {
+    margin-top: 12px;
+  }
+
+  &__logo-full {
+    margin: 32px auto 0;
+    display: block;
+    width: 100%;
+    opacity: 0.3;
+
+    &--sm {
+      max-width: 922px;
+    }
+  }
+
+  &__copyright {
+    margin-top: 32px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 32px 0;
+
+    &__columns {
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+
+    &__column {
+      margin-top: 20px;
+      margin-left: 20px;
+      width: calc(25% - 20px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__columns {
+      margin-top: -32px;
+      flex-direction: column;
+    }
+
+    &__column {
+      margin-top: 32px;
+      width: 100%;
+      max-width: 261px;
+    }
+
+    &__list {
+      margin-left: 0;
+      margin-right: 0;
+
+      &--w-sm {
+        padding-left: 32px;
+        padding-right: 32px;
+        max-width: 100%;
+      }
+    }
+
+    &__label {
+      margin-left: 0;
+      margin-right: 0;
+
+      &--w-sm {
+        padding-left: 32px;
+        padding-right: 32px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
+}

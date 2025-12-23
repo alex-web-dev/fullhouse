@@ -1,0 +1,41 @@
+@use "../mixins" as *;
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-black);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:before {
+      @include pseudo-icon("../img/icons/check.svg", 8px, 8px);
+      visibility: hidden;
+    }
+  }
+
+  &__input:checked ~ &__switch {
+    &:before {
+      visibility: visible;
+    }
+  }
+
+  &__text {
+    user-select: none;
+  }
+}

@@ -1,0 +1,150 @@
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.22;
+  color: var(--color-black);
+
+  &--xs {
+    font-size: 12px;
+  }
+
+  &--sm {
+    font-size: 14px;
+  }
+
+  &--lg {
+    font-size: 18px;
+  }
+
+  &--xl {
+    font-size: 20px;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--white {
+    color: var(--color-white);
+  }
+
+  &--primary {
+    color: var(--color-primary);
+  }
+
+  &--primary-500 {
+    color: var(--color-primary-500);
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--iflex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--justify-start {
+    justify-content: flex-start;
+  }
+
+  &--justify-between {
+    justify-content: space-between;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+
+  &--items-start {
+    align-items: flex-start;
+  }
+
+  &--items--end {
+    align-items: flex-end;
+  }
+
+  &--line {
+    text-decoration: underline;
+  }
+
+  &--line-through {
+    text-decoration: line-through;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--link-primary {
+    a {
+      color: var(--color-primary);
+    }
+  }
+
+  p {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  &--space-nowrap {
+    white-space: nowrap;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+
+    &:first-child:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &--mx-xl {
+      &:first-child:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+
+    &--mx-lg {
+      &:first-child:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__space-nowrap {
+    white-space: nowrap;
+  }
+}

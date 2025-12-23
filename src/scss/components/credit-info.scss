@@ -1,0 +1,57 @@
+.credit-info {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  border-radius: 8px;
+  background-color: var(--color-primary-100);
+
+  &__left {
+    flex: 0 1 420px;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__right {
+    flex: 0 0 200px;
+  }
+
+  &__detail {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__detail-name {
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    flex-direction: column;
+
+    &__left {
+      flex: none;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__right {
+      flex: none;
+    }
+
+    &__detail {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+}

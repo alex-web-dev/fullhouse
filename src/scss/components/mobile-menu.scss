@@ -1,0 +1,31 @@
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 30;
+  padding: 12px 12px 32px;
+  display: none;
+  width: 100%;
+  background-color: var(--color-grey);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    flex: 1 1 0%;
+    white-space: nowrap;
+
+    &--active {
+      color: var(--color-primary-500);
+    }
+  }
+
+  &__item-icon {
+    margin: 0 auto 1px;
+  }
+
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}

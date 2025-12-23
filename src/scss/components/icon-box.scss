@@ -1,0 +1,116 @@
+.icon-box {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  transition: background 0.35s;
+
+  &--sm {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--primary-100 {
+    background-color: var(--color-primary-100);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
+  &--telegram {
+    background-color: var(--color-primary-100);
+
+    &-white {
+      background-color: var(--color-white);
+    }
+
+    svg {
+      fill: #039be5;
+      transition: fill 0.35s;
+    }
+
+    &:hover {
+      background-color: var(--color-grey);
+    }
+
+    &:active {
+      background-color: var(--color-primary-500);
+    }
+
+    &:disabled {
+      background-color: var(--color-white);
+      cursor: default;
+
+      svg {
+        fill: var(--color-grey);
+      }
+    }
+  }
+
+  &--max {
+    background-color: var(--color-primary-100);
+
+    &-white {
+      background-color: var(--color-white);
+    }
+
+    &:hover {
+      background-color: var(--color-grey);
+    }
+
+    &:active {
+      background-color: var(--color-primary-500);
+    }
+
+    &:disabled {
+      background-color: var(--color-white);
+      cursor: default;
+
+      img,
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--next {
+    background-color: var(--color-primary-100);
+
+    svg {
+      fill: var(--color-black);
+      transition: fill 0.35s;
+    }
+
+    &:hover {
+      background-color: var(--color-grey);
+    }
+
+    &:active {
+      background-color: var(--color-primary-200);
+    }
+
+    &:disabled {
+      background-color: var(--color-primary-100);
+      cursor: default;
+
+      svg {
+        fill: var(--color-primary-200);
+      }
+    }
+  }
+
+  &--lg {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__img {
+    &--rotate-180 {
+      transform: rotate(180deg);
+    }
+  }
+}

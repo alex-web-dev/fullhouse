@@ -1,0 +1,29 @@
+.body {
+  &--lock {
+    overflow: hidden;
+  }
+
+  &__backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      visibility 0.35s,
+      opacity 0.35s;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 114px;
+  }
+}

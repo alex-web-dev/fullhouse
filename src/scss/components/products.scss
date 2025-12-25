@@ -20,6 +20,22 @@
     width: calc(33.33% - 32px);
   }
 
+  &__footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__footer-btn {
+    margin-top: 20px;
+  }
+
+  &__footer-card {
+    margin-top: 32px;
+    display: none;
+  }
+
   @media (max-width: 1200px) {
     &__filters {
       margin-bottom: 40px;
@@ -34,6 +50,10 @@
       margin-top: 20px;
       margin-left: 20px;
       width: calc(33.33% - 20px);
+    }
+
+    &__footer {
+      margin-top: 40px;
     }
   }
 
@@ -54,6 +74,30 @@
 
     &__item {
       width: calc(100% - 20px);
+
+      &--discuss {
+        display: none;
+      }
+    }
+
+    &__footer {
+      margin-top: 32px;
+    }
+
+    &__pagination {
+      display: none;
+    }
+
+    &__footer-btn {
+      margin-top: 0;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 100%;
+    }
+
+    &__footer-card {
+      display: flex;
+      width: 100%;
     }
   }
 }

@@ -93,6 +93,7 @@
       background-color: var(--color-primary-200);
     }
 
+    &.icon-box--disabled,
     &:disabled {
       background-color: var(--color-primary-100);
       cursor: default;

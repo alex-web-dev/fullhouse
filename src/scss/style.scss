@@ -31,6 +31,8 @@
 @use "./components/swiper-pagination";
 @use "./components/menu";
 @use "./components/mobile-menu";
+@use "./components/pagination";
+@use "./components/discuss-card";
 @use "./components/header";
 @use "./components/main";
 @use "./components/section";
@@ -57,12 +59,7 @@
 @use "./components/info-cards";
 @use "./components/contact-item";
 @use "./components/contacts";
-@use "./components/discuss-card";
 @use "./components/filter-checkbox";
 @use "./components/filter-menu";
 @use "./components/filters";
-@use "./components/project-price";
-@use "./components/project-details";
-@use "./components/project-slider";
-@use "./components/project";
 @use "./components/footer";

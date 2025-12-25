@@ -6,8 +6,8 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="./favicon.png" />
     <title>Фулл Хаус - Каталог проектов</title>
-    <script type="module" crossorigin src="./assets/main-BCBo3nJy.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BtZ2o0QR.css">
+    <script type="module" crossorigin src="./assets/main-OP9CLViJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-B5xCni9l.css">
   </head>
   <body class="body">
     <header class="header">
@@ -185,7 +185,7 @@
 
     <div class="mobile-menu">
       <div class="mobile-menu__list">
-        <a class="text text--xs text--center mobile-menu__item mobile-menu__item--active" href="#">
+        <a class="text text--xs text--center mobile-menu__item mobile-menu__item--active" href="catalog.html">
           <img class="icon mobile-menu__item-icon" src="img/icons/mobile-menu/projects-active.svg" alt="" />
           <div>Проекты</div>
         </a>
@@ -230,67 +230,95 @@
             <div class="products">
               <div class="products__header">
                 <h1 class="title title--3 title--strong-primary products__title">
-                  Все проекты из каталога можно заказать из
-                  <strong>профилированного или клееного бруса</strong>
+                  Все проекты из&nbsp;каталога можно заказать из&nbsp;<strong>профилированного или&nbsp;клееного бруса</strong>
                 </h1>
               </div>
               <div class="filters products__filters">
                 <div class="filters__section">
-                  <div class="filters__checkboxes filters__checkboxes--gap-sm">
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects" checked />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Дома из бруса</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Дома из бруса</span>
+                  <div class="filter-menu filter-menu--mobile filters__menu filters__menu--flex-auto dropdown">
+                    <button class="filter-menu__btn dropdown__btn">
+                      <span class="text text--xs filter-menu__btn-text">Дома из бруса</span>
+                      <span class="icon icon--3xs filter-menu__btn-icon">
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.854 0.854028L5.85403 5.85403C5.80759 5.90052 5.75245 5.9374 5.69175 5.96256C5.63105 5.98772 5.56599 6.00067 5.50028 6.00067C5.43457 6.00067 5.36951 5.98772 5.30881 5.96256C5.24811 5.9374 5.19296 5.90052 5.14653 5.85403L0.146528 0.854028C0.0527077 0.760208 0 0.63296 0 0.500278C0 0.367596 0.0527077 0.240348 0.146528 0.146528C0.240348 0.0527074 0.367596 0 0.500278 0C0.63296 0 0.760208 0.0527074 0.854028 0.146528L5.50028 4.7934L10.1465 0.146528C10.193 0.100073 10.2481 0.0632225 10.3088 0.0380812C10.3695 0.0129398 10.4346 0 10.5003 0C10.566 0 10.631 0.0129398 10.6917 0.0380812C10.7524 0.0632225 10.8076 0.100073 10.854 0.146528C10.9005 0.192983 10.9373 0.248133 10.9625 0.30883C10.9876 0.369526 11.0006 0.434581 11.0006 0.500278C11.0006 0.565975 10.9876 0.63103 10.9625 0.691726C10.9373 0.752423 10.9005 0.807573 10.854 0.854028Z" />
+                        </svg>
                       </span>
-                    </label>
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects" />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Бани из бруса</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Бани из бруса</span>
-                      </span>
-                    </label>
+                    </button>
+                    <div class="filter-menu__main dropdown__main">
+                      <div class="filter-menu__list">
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-1" value="1" checked />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Дома из бруса</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Дома из бруса</span>
+                          </span>
+                        </label>
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-1" value="2" />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Бани из бруса</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Бани из бруса</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="filters__section filters__section--flex-auto">
-                  <div class="filters__checkboxes filters__checkboxes--justify-between">
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects-2" checked />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Дома из клееного бруса</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">
-                          Дома из клееного бруса
-                        </span>
+                  <div class="filter-menu filter-menu--mobile filters__menu filters__menu--flex-auto dropdown">
+                    <button class="filter-menu__btn dropdown__btn">
+                      <span class="text text--xs filter-menu__btn-text">Дома из клееного бруса</span>
+                      <span class="icon icon--3xs filter-menu__btn-icon">
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.854 0.854028L5.85403 5.85403C5.80759 5.90052 5.75245 5.9374 5.69175 5.96256C5.63105 5.98772 5.56599 6.00067 5.50028 6.00067C5.43457 6.00067 5.36951 5.98772 5.30881 5.96256C5.24811 5.9374 5.19296 5.90052 5.14653 5.85403L0.146528 0.854028C0.0527077 0.760208 0 0.63296 0 0.500278C0 0.367596 0.0527077 0.240348 0.146528 0.146528C0.240348 0.0527074 0.367596 0 0.500278 0C0.63296 0 0.760208 0.0527074 0.854028 0.146528L5.50028 4.7934L10.1465 0.146528C10.193 0.100073 10.2481 0.0632225 10.3088 0.0380812C10.3695 0.0129398 10.4346 0 10.5003 0C10.566 0 10.631 0.0129398 10.6917 0.0380812C10.7524 0.0632225 10.8076 0.100073 10.854 0.146528C10.9005 0.192983 10.9373 0.248133 10.9625 0.30883C10.9876 0.369526 11.0006 0.434581 11.0006 0.500278C11.0006 0.565975 10.9876 0.63103 10.9625 0.691726C10.9373 0.752423 10.9005 0.807573 10.854 0.854028Z" />
+                        </svg>
                       </span>
-                    </label>
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects-2" />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Одноэтажные дома</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Одноэтажные дома</span>
-                      </span>
-                    </label>
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects-2" />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Шале</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Шале</span>
-                      </span>
-                    </label>
-                    <label class="filter-checkbox filters__checkbox">
-                      <input class="filter-checkbox__input" type="radio" name="projects-2" />
-                      <span class="filter-checkbox__text">
-                        <span class="text text--sm filter-checkbox__text-normal">Семейная ипотека</span>
-                        <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Семейная ипотека</span>
-                      </span>
-                    </label>
+                    </button>
+                    <div class="filter-menu__main dropdown__main">
+                      <div class="filter-menu__list filter-menu__list--gap-lg">
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-2" value="1" checked />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Дома из клееного бруса</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">
+                              Дома из клееного бруса
+                            </span>
+                          </span>
+                        </label>
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-2" value="2" />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Одноэтажные дома</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Одноэтажные дома</span>
+                          </span>
+                        </label>
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-2" value="3" />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Шале</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Шале</span>
+                          </span>
+                        </label>
+                        <label class="filter-checkbox filter-menu__item">
+                          <input class="filter-checkbox__input" type="radio" name="project-2" value="4" />
+                          <span class="filter-checkbox__text">
+                            <span class="text text--sm filter-checkbox__text-normal">Семейная ипотека</span>
+                            <span class="text text--sm text--medium text--primary-500 filter-checkbox__text-checked">Семейная ипотека</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                   <div class="filter-menu filters__menu filters__menu--w-lg dropdown">
                     <button class="filter-menu__btn dropdown__btn">
                       <span class="text text--xs filter-menu__btn-text">По площади (увеличение)</span>
                       <span class="icon icon--3xs filter-menu__btn-icon">
-                        <img class="icon__img" src="img/icons/down.svg" alt="" />
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.854 0.854028L5.85403 5.85403C5.80759 5.90052 5.75245 5.9374 5.69175 5.96256C5.63105 5.98772 5.56599 6.00067 5.50028 6.00067C5.43457 6.00067 5.36951 5.98772 5.30881 5.96256C5.24811 5.9374 5.19296 5.90052 5.14653 5.85403L0.146528 0.854028C0.0527077 0.760208 0 0.63296 0 0.500278C0 0.367596 0.0527077 0.240348 0.146528 0.146528C0.240348 0.0527074 0.367596 0 0.500278 0C0.63296 0 0.760208 0.0527074 0.854028 0.146528L5.50028 4.7934L10.1465 0.146528C10.193 0.100073 10.2481 0.0632225 10.3088 0.0380812C10.3695 0.0129398 10.4346 0 10.5003 0C10.566 0 10.631 0.0129398 10.6917 0.0380812C10.7524 0.0632225 10.8076 0.100073 10.854 0.146528C10.9005 0.192983 10.9373 0.248133 10.9625 0.30883C10.9876 0.369526 11.0006 0.434581 11.0006 0.500278C11.0006 0.565975 10.9876 0.63103 10.9625 0.691726C10.9373 0.752423 10.9005 0.807573 10.854 0.854028Z" />
+                        </svg>
                       </span>
                     </button>
                     <div class="filter-menu__main dropdown__main">

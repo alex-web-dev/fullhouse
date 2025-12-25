@@ -37,4 +37,11 @@
   &__input:checked ~ &__text &__text-checked {
     opacity: 1;
   }
+
+  @media (max-width: 991px) {
+    &__text-normal,
+    &__text-checked {
+      font-size: 14px;
+    }
+  }
 }

@@ -64,15 +64,12 @@
   }
 
   @media (max-width: 767px) {
-    &__header {
-      margin-bottom: 20px;
-    }
-
-    &__filters {
-      margin-bottom: 32px;
+    &__list {
+      margin-top: -32px;
     }
 
     &__item {
+      margin-top: 32px;
       width: calc(100% - 20px);
 
       &--discuss {
@@ -90,8 +87,8 @@
 
     &__footer-btn {
       margin-top: 0;
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-top: 19px;
+      padding-bottom: 19px;
       width: 100%;
     }
 

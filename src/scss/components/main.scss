@@ -33,7 +33,7 @@
   }
 
   @media (max-width: 767px) {
-    padding-bottom: 80px;
+    padding: 180px 0 80px;
 
     &__section {
       margin-top: 80px;
@@ -43,8 +43,8 @@
       }
     }
 
-    &__breadcrumb {
-      margin-bottom: 20px;
+    &__banner {
+      margin-top: 12px;
     }
   }
 }

@@ -5,7 +5,8 @@
   &__list {
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 4px 5px;
   }
 
   &__item {
@@ -15,7 +16,6 @@
 
     &:not(:last-child) {
       position: relative;
-      margin-right: 5px;
 
       &:after {
         margin-left: 5px;

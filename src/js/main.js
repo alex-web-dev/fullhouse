@@ -9,3 +9,4 @@ import "./dropdown.js";
 import "./products-slider.js";
 import "./video-section.js";
 import "./nav-btns.js";
+import "./filter-menu.js";

@@ -10,6 +10,11 @@
     }
   }
 
+  &__breadcrumb {
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
   @media (max-width: 1200px) {
     padding: 192px 0 100px;
 
@@ -19,6 +24,11 @@
       &--mt-xs {
         margin-top: 70px;
       }
+    }
+
+    &__breadcrumb {
+      margin-top: 0;
+      margin-bottom: 32px;
     }
   }
 
@@ -31,6 +41,10 @@
       &--mt-xs {
         margin-top: 60px;
       }
+    }
+
+    &__breadcrumb {
+      margin-bottom: 20px;
     }
   }
 }

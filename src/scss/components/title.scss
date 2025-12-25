@@ -2,6 +2,10 @@
   line-height: 1.22;
   font-weight: 600;
 
+  strong {
+    font-weight: 600;
+  }
+
   &--1 {
     font-size: 30px;
   }
@@ -32,6 +36,12 @@
 
   &--primary {
     color: var(--color-primary);
+  }
+
+  &--strong-primary {
+    strong {
+      color: var(--color-primary);
+    }
   }
 
   &--left {

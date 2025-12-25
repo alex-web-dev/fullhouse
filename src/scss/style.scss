@@ -42,6 +42,7 @@
 @use "./components/projects";
 @use "./components/product-card";
 @use "./components/products-slider";
+@use "./components/products";
 @use "./components/catalog-banner";
 @use "./components/video-section";
 @use "./components/channel-section";
@@ -56,4 +57,12 @@
 @use "./components/info-cards";
 @use "./components/contact-item";
 @use "./components/contacts";
+@use "./components/discuss-card";
+@use "./components/filter-checkbox";
+@use "./components/filter-menu";
+@use "./components/filters";
+@use "./components/project-price";
+@use "./components/project-details";
+@use "./components/project-slider";
+@use "./components/project";
 @use "./components/footer";

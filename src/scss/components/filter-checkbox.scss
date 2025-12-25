@@ -1,0 +1,40 @@
+.filter-checkbox {
+  &__input {
+    display: none;
+  }
+
+  &__text {
+    position: relative;
+    display: inline-grid;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__text-normal,
+  &__text-checked {
+    grid-area: 1 / 1;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  &__text-normal {
+    font-weight: 400;
+    color: var(--color-text);
+  }
+
+  &__text-checked {
+    opacity: 0;
+  }
+
+  &__input[type="radio"]:checked ~ &__text {
+    cursor: default;
+  }
+
+  &__input:checked ~ &__text &__text-normal {
+    opacity: 0;
+  }
+
+  &__input:checked ~ &__text &__text-checked {
+    opacity: 1;
+  }
+}

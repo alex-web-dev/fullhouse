@@ -15,10 +15,10 @@
 
     &:not(:last-child) {
       position: relative;
-      margin-right: 6px;
+      margin-right: 5px;
 
       &:after {
-        margin-left: 6px;
+        margin-left: 5px;
         content: "/";
         font-size: 14px;
       }

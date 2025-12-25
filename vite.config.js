@@ -7,6 +7,8 @@ export default {
       input: {
         index: "index.html",
         indexFooters: "index-footers.html",
+        catalog: "catalog.html",
+        catalogArchitect: "catalog-architect.html",
       },
     },
   },

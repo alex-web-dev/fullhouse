@@ -3,6 +3,14 @@
   border-radius: 4px;
   background-color: var(--color-primary-100);
 
+  &--primary-300 {
+    background-color: var(--color-primary-300);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
   &--px-xs {
     padding-left: 12px;
     padding-right: 12px;

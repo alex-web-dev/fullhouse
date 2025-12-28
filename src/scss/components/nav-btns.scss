@@ -38,6 +38,11 @@
       display: flex;
       justify-content: center;
 
+      &--lg {
+        padding-top: 19px;
+        padding-bottom: 19px;
+      }
+
       &.dropdown__btn--active {
         .nav-btn__icon {
           transform: rotate(180deg);
@@ -52,9 +57,10 @@
     &.dropdown--active &__main {
       margin-top: 12px;
       padding: 12px;
-      background-color: #fff;
+      background-color: var(--color-white);
       position: absolute;
       left: 0;
+      z-index: 5;
       top: 100%;
       width: 100%;
       display: flex;

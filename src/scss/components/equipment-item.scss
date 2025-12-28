@@ -1,0 +1,51 @@
+.equipment-item {
+  display: flex;
+  border: 1px solid var(--color-primary-200);
+  border-radius: 4px;
+
+  &__left {
+    padding: 20px;
+    flex: 0 0 39.9%;
+    background-color: var(--color-grey);
+  }
+
+  &__icon {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    &--w-sm {
+      max-width: 200px;
+    }
+  }
+
+  &__right {
+    padding: 20px;
+    flex: auto;
+    border-left: 1px solid var(--color-primary-200);
+  }
+
+  &__feature {
+    &:not(:first-child) {
+      margin-top: 11px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    &__icon {
+      display: none;
+    }
+
+    &__right {
+      border-left: none;
+    }
+
+    &__feature {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

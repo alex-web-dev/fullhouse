@@ -1,0 +1,52 @@
+.project {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__main {
+    display: flex;
+    gap: 44px;
+  }
+
+  &__slider {
+    flex: auto;
+  }
+
+  &__info {
+    flex: none;
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__price {
+    flex: auto;
+    min-height: 125px;
+  }
+
+  @media (max-width: 1200px) {
+    &__main {
+      gap: 32px;
+    }
+
+    &__info {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__main {
+      flex-direction: column;
+    }
+
+    &__info {
+      width: 100%;
+      gap: 12px;
+    }
+  }
+}

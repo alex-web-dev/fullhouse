@@ -1,0 +1,29 @@
+.addition-info {
+  padding: 60px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+
+  &__main {
+    max-width: 845px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 45px;
+
+    &__main {
+      max-width: 815px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 32px;
+
+    &__main {
+      max-width: 789px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+}

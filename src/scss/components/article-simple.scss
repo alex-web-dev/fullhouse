@@ -1,0 +1,27 @@
+.article-simple {
+  &__img-box {
+    height: 261px;
+    width: 100%;
+    display: block;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 767px) {
+    &__img-box {
+      height: 343px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+  }
+}

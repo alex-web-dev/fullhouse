@@ -1,0 +1,20 @@
+.object-info {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--color-primary-100);
+
+  &--py-xs {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__content {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &--w-sm {
+      max-width: 300px;
+    }
+  }
+}

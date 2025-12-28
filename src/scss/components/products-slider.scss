@@ -21,6 +21,10 @@
     position: absolute;
     z-index: 1;
     top: 50%;
+
+    &.swiper-button-lock {
+      display: none;
+    }
   }
 
   &__prev {

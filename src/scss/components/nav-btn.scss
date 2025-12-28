@@ -13,7 +13,7 @@
   &--active,
   &.tabs-btns__btn--active {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
     cursor: default;
   }
 

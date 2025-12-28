@@ -2,14 +2,6 @@
   font-size: 16px;
   line-height: 1.22;
 
-  &--medium {
-    font-weight: 500;
-  }
-
-  &--semibold {
-    font-weight: 600;
-  }
-
   h1,
   h2,
   h3,
@@ -35,6 +27,7 @@
 
   h4 {
     font-size: 18px;
+    font-weight: 500;
   }
 
   p,
@@ -65,8 +58,28 @@
     }
   }
 
+  ol {
+    counter-reset: item;
+
+    li {
+      counter-increment: item;
+
+      &:before {
+        content: counter(item) ". ";
+      }
+    }
+  }
+
   a {
     color: var(--color-primary);
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--semibold {
+    font-weight: 600;
   }
 
   &--sm {
@@ -78,6 +91,24 @@
           margin-top: 6px;
         }
       }
+    }
+  }
+
+  &--my-sm {
+    p,
+    ul,
+    li {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__offset {
+    margin-top: 12px;
+
+    &--xl {
+      margin-top: 20px;
     }
   }
 

@@ -147,4 +147,10 @@
   &__space-nowrap {
     white-space: nowrap;
   }
+
+  @media (max-width: 767px) {
+    &--mobile-sm {
+      font-size: 14px;
+    }
+  }
 }

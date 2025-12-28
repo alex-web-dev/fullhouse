@@ -1,10 +1,31 @@
 .tabs {
   &-list {
+    position: relative;
+
     &__item {
       display: none;
 
       &--active {
         display: block;
+      }
+
+      &--visibility {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition:
+          opacity 0.35s,
+          visibility 0.35s;
+      }
+
+      &--visibility.tabs-list__item--active {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

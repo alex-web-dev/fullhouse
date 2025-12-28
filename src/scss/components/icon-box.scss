@@ -8,19 +8,6 @@
   border-radius: 4px;
   transition: background 0.35s;
 
-  &--sm {
-    width: 40px;
-    height: 40px;
-  }
-
-  &--primary-100 {
-    background-color: var(--color-primary-100);
-  }
-
-  &--white {
-    background-color: var(--color-white);
-  }
-
   &--telegram {
     background-color: var(--color-primary-100);
 
@@ -102,6 +89,27 @@
         fill: var(--color-primary-200);
       }
     }
+  }
+
+  &--primary-100 {
+    background-color: var(--color-primary-100);
+  }
+
+  &--primary-500 {
+    background-color: var(--color-primary-500);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
+  &--grey {
+    background-color: var(--color-grey);
+  }
+
+  &--sm {
+    width: 40px;
+    height: 40px;
   }
 
   &--lg {

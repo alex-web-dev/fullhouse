@@ -10,3 +10,8 @@ import "./products-slider.js";
 import "./video-section.js";
 import "./nav-btns.js";
 import "./filter-menu.js";
+import "./project-slider.js";
+import "./layouts-slider.js";
+import "./gallery-slider.js";
+import "./articles-slider.js";
+import "./object-slider.js";

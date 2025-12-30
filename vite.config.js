@@ -14,6 +14,7 @@ export default {
         articles: "articles.html",
         about: "about.html",
         partners: "partners.html",
+        contacts: "contacts.html",
       },
     },
   },

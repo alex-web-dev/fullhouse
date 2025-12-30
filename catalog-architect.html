@@ -60,37 +60,37 @@
                 <div class="dropdown-menu dropdown__main menu__item-submenu">
                   <div class="dropdown-menu__list">
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/bathhouse.svg" alt="" />
                       </span>
                       <span>Баня под ключ</span>
                     </a>
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/designing.svg" alt="" />
                       </span>
                       <span>Проектирование</span>
                     </a>
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/glued.svg" alt="" />
                       </span>
                       <span>Клееный брус</span>
                     </a>
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/profiled.svg" alt="" />
                       </span>
                       <span>Профилированный брус</span>
                     </a>
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/paint.svg" alt="" />
                       </span>
                       <span>Покраска домов</span>
                     </a>
                     <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/services/assembling.svg" alt="" />
                       </span>
                       <span>Сборка сруба</span>
@@ -116,13 +116,13 @@
                 <div class="dropdown-menu dropdown__main menu__item-submenu menu__item-submenu--left-xs">
                   <div class="dropdown-menu__list">
                     <a class="icon-link link link--sm dropdown-menu__item" href="articles.html">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/about-construction/articles.svg" alt="" />
                       </span>
                       <span>Статьи</span>
                     </a>
-                    <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                    <a class="icon-link link link--sm dropdown-menu__item" href="partners.html">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/about-construction/partners.svg" alt="" />
                       </span>
                       <span>Партнеры</span>
@@ -142,14 +142,14 @@
                 </a>
                 <div class="dropdown-menu dropdown__main menu__item-submenu menu__item-submenu--left-xs">
                   <div class="dropdown-menu__list">
-                    <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                    <a class="icon-link link link--sm dropdown-menu__item" href="about.html">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/about-company/about-us.svg" alt="" />
                       </span>
                       <span>О нас</span>
                     </a>
-                    <a class="icon-link link link--sm dropdown-menu__item" href="#">
-                      <span class="icon-box icon-box--primary-100 icon-box--sm" href="#">
+                    <a class="icon-link link link--sm dropdown-menu__item" href="contacts.html">
+                      <span class="icon-box icon-box--primary-100 icon-box--sm">
                         <img class="icon icon-box__img" src="img/icons/about-company/contacts.svg" alt="" />
                       </span>
                       <span>Контакты</span>
@@ -176,7 +176,7 @@
               </a>
             </div>
           </div>
-          <button class="btn btn--xs btn--primary-500 header__callback">Оставить заявку</button>
+          <button class="btn btn--xs btn--primary-500 header__callback js-open-popup" data-popup-name="callback">Оставить заявку</button>
         </div>
       </div>
     </header>
@@ -199,7 +199,7 @@
           <img class="icon mobile-menu__item-icon" src="img/icons/mobile-menu/building.svg" alt="" />
           <div>О стройке</div>
         </a>
-        <a class="text text--xs text--center mobile-menu__item" href="#">
+        <a class="text text--xs text--center mobile-menu__item" href="about.html">
           <img class="icon mobile-menu__item-icon" src="img/icons/mobile-menu/about.svg" alt="" />
           <div>О нас</div>
         </a>
@@ -558,7 +558,9 @@
                   <p class="text text--sm text--white discuss-card__text discuss-card__text--w-sm">
                     Любую идею понравившегося проекта можно изменить под себя
                   </p>
-                  <button class="btn btn--white btn--full discuss-card__btn">Обсудить проект</button>
+                  <button class="btn btn--white btn--full discuss-card__btn js-open-popup" data-popup-name="callback">
+                    Обсудить проект
+                  </button>
                 </div>
               </div>
               <div class="products__footer">
@@ -595,7 +597,9 @@
                   <p class="text text--sm text--white discuss-card__text discuss-card__text--w-sm">
                     Любую идею понравившегося проекта можно изменить под себя
                   </p>
-                  <button class="btn btn--white btn--full discuss-card__btn">Обсудить проект</button>
+                  <button class="btn btn--white btn--full discuss-card__btn js-open-popup" data-popup-name="callback">
+                    Обсудить проект
+                  </button>
                 </div>
               </div>
             </div>
@@ -754,7 +758,7 @@
                   <a class="link link--medium footer__item-link" href="#">О стройке</a>
                 </li>
                 <li class="footer__item">
-                  <a class="link link--medium footer__item-link" href="#">О компании</a>
+                  <a class="link link--medium footer__item-link" href="about.html">О компании</a>
                 </li>
               </ul>
             </div>
@@ -775,6 +779,42 @@
     </footer>
 
     <div class="body__backdrop"></div>
+
+    <div class="popup" data-popup-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup__content">
+            <form class="popup-form popup__form" autocomplete="off">
+              <div class="title title--3 title--center popup-form__title">Оставьте заявку</div>
+              <div class="popup-form__main">
+                <div class="input popup-form__input">
+                  <div class="input__main">
+                    <input class="input__field" type="text" placeholder="Ваше имя" />
+                  </div>
+                </div>
+                <div class="input popup-form__input">
+                  <div class="input__main">
+                    <input class="input__field js-imask" type="text" placeholder="Ваш телефон" data-mask="+{7} (000) 000-00-00" />
+                  </div>
+                </div>
+                <button class="btn btn--primary-500 btn--sm projects__footer-btn" type="submit">Отправить</button>
+              </div>
+              <div class="popup-form__privacy">
+                <label class="checkbox popup-form__privacy-checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__switch"></span>
+                </label>
+                <span class="text text--xs popup-form__privacy-text">Я согласен на обработку персональных данных</span>
+              </div>
+            </form>
+            <button class="icon-box icon-box--sm icon-box--black icon-box--rounded-lg popup__close js-close-popup">
+              <img class="icon-box__img" src="img/icons/close-grey.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__backdrop"></div>
+    </div>
 
     <script type="module" src="./src/js/main.js"></script>
   </body>

@@ -45,6 +45,10 @@
 
     &__pagination {
       display: flex;
+
+      &.swiper-pagination-lock {
+        display: none;
+      }
     }
   }
 }

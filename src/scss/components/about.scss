@@ -1,0 +1,45 @@
+.about {
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__img-box {
+    position: relative;
+    flex: none;
+    width: 57.2%;
+    padding-top: min(31.5%, 359px);
+    border-radius: 8px;
+    background-color: var(--color-primary-500);
+    overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 90%;
+  }
+
+  &__items {
+    margin-top: 80px;
+  }
+
+  @media (max-width: 991px) {
+    &__main {
+      flex-direction: column;
+    }
+
+    &__img-box {
+      padding-top: min(55%, 359px);
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}

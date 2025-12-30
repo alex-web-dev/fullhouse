@@ -34,6 +34,8 @@
 @use "./components/mobile-menu";
 @use "./components/pagination";
 @use "./components/discuss-card";
+@use "./components/popup-form";
+@use "./components/popup";
 @use "./components/header";
 @use "./components/main";
 @use "./components/section";
@@ -87,4 +89,12 @@
 @use "./components/object-slider";
 @use "./components/object-info";
 @use "./components/object-item";
+@use "./components/text-items";
+@use "./components/about";
+@use "./components/doc-item";
+@use "./components/docs-slider";
+@use "./components/docs";
+@use "./components/partner-card";
+@use "./components/partners";
+@use "./components/gallery";
 @use "./components/footer";

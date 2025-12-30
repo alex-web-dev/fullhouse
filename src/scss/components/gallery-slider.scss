@@ -24,6 +24,10 @@
     border-radius: 8px;
     overflow: hidden;
 
+    &--h-sm {
+      padding-top: min(78.3%, 280px);
+    }
+
     &--h-xs {
       padding-top: min(78.3%, 260px);
     }
@@ -78,6 +82,10 @@
 
     &__pagination {
       display: flex;
+
+      &.swiper-pagination-lock {
+        display: none;
+      }
     }
   }
 

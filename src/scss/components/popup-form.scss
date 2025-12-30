@@ -1,0 +1,26 @@
+.popup-form {
+  padding: 40px 60px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__privacy {
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 32px;
+  }
+}

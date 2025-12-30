@@ -104,6 +104,16 @@
     }
   }
 
+  &--my-lg {
+    p,
+    ul,
+    li {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+
   &__offset {
     margin-top: 12px;
 

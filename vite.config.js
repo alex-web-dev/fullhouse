@@ -12,6 +12,8 @@ export default {
         project: "project.html",
         catalogObjects: "catalog-objects.html",
         articles: "articles.html",
+        about: "about.html",
+        partners: "partners.html",
       },
     },
   },

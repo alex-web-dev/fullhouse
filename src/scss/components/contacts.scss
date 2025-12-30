@@ -3,6 +3,10 @@
   align-items: flex-start;
   gap: 32px;
 
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
   &__left {
     flex: 0 0 360px;
   }
@@ -70,6 +74,10 @@
     gap: 20px;
     flex-direction: column;
 
+    &--reverse {
+      flex-direction: column-reverse;
+    }
+
     &__left {
       flex: none;
     }
@@ -82,8 +90,7 @@
 
   @media (max-width: 767px) {
     &__title {
-      margin-bottom: 12px;
-      font-size: 26px;
+      margin-bottom: 20px;
     }
 
     &__right {
@@ -104,7 +111,7 @@
 
   @media (max-width: 480px) {
     &__images {
-      gap: 12px;
+      gap: 20px;
       flex-direction: column;
     }
 

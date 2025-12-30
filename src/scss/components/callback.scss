@@ -22,12 +22,16 @@
   }
 
   &__title {
-    max-width: 330px;
+    max-width: 340px;
   }
 
   &__text {
     margin-top: 20px;
-    max-width: 330px;
+    max-width: 340px;
+  }
+
+  &__btn {
+    margin-top: 40px;
   }
 
   &__main {
@@ -85,12 +89,21 @@
     padding: 32px 16px;
     border-radius: 0;
 
+    &--mobile-p-sm {
+      padding: 20px;
+    }
+
     &__title {
       font-size: 26px;
     }
 
     &__text {
       font-size: 18px;
+    }
+
+    &__btn {
+      margin-top: 60px;
+      width: 100%;
     }
 
     &__form {

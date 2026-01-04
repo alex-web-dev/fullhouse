@@ -17,3 +17,4 @@ import "./articles-slider.js";
 import "./object-slider.js";
 import "./docs-slider.js";
 import "./popup.js";
+import "./featured-images.js";

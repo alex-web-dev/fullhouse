@@ -7,6 +7,16 @@
     }
   }
 
+  &__slider {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__gallery {
+    margin-top: 60px;
+  }
+
   &__footer {
     margin-top: 40px;
     display: flex;
@@ -33,6 +43,10 @@
       &--mobile-mb-base {
         margin-bottom: 32px;
       }
+    }
+
+    &__gallery {
+      margin-top: 80px;
     }
 
     &__footer {

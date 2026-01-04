@@ -1,0 +1,13 @@
+.composition-card {
+  border: 1px solid var(--color-primary-200);
+
+  &__header {
+    padding: 12px;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-primary-200);
+  }
+
+  &__main {
+    padding: 20px 18px;
+  }
+}

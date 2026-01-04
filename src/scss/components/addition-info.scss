@@ -5,6 +5,15 @@
 
   &__main {
     max-width: 845px;
+
+    &--mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
   }
 
   @media (max-width: 1200px) {

@@ -8,6 +8,10 @@
   &__body {
     position: relative;
     padding-top: min(72.2%, 400px);
+
+    &--h-col-4 {
+      padding-top: min(94.7%, 340px);
+    }
   }
 
   &__content {
@@ -32,6 +36,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 1200px) {
+    &__body {
+      &--h-col-4 {
+        padding-top: min(72.2%, 400px);
+      }
+    }
+
+    &__label {
+      width: auto;
+    }
   }
 
   @media (max-width: 767px) {

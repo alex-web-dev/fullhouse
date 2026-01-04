@@ -67,13 +67,22 @@
   &__detail {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px 12px;
+
+    &--column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__detail-value {
     sup {
       font-size: 12px;
     }
+  }
+
+  &__btn {
+    margin-top: 20px;
   }
 
   @media (max-width: 1200px) {

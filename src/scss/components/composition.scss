@@ -1,0 +1,44 @@
+.composition {
+  &__list {
+    margin-top: -32px;
+    margin-left: -32px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: calc(33.33% - 32px);
+  }
+
+  @media (max-width: 1200px) {
+    &__list {
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+
+    &__item {
+      margin-top: 20px;
+      margin-left: 20px;
+      width: calc(33.33% - 20px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__item {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      margin-top: -12px;
+    }
+
+    &__item {
+      margin-top: 12px;
+      width: calc(100% - 20px);
+    }
+  }
+}

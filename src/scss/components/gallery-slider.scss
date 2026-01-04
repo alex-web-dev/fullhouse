@@ -25,11 +25,11 @@
     overflow: hidden;
 
     &--h-sm {
-      padding-top: min(78.3%, 280px);
+      padding-top: min(78.2%, 280px);
     }
 
     &--h-xs {
-      padding-top: min(78.3%, 260px);
+      padding-top: min(78.2%, 260px);
     }
   }
 
@@ -102,6 +102,10 @@
 
     &__item {
       padding-top: min(107.3%, 440px);
+
+      &--h-sm {
+        padding-top: min(78.2%, 268px);
+      }
     }
   }
 }

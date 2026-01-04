@@ -16,13 +16,21 @@
   &__content {
     position: relative;
     z-index: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     &--w-sm {
-      max-width: 260px;
+      max-width: 268px;
     }
   }
 
   &__title {
+    &--w-sm {
+      max-width: 240px;
+    }
+
     &--w-xs {
       max-width: 180px;
     }
@@ -30,6 +38,10 @@
 
   &__text {
     margin-top: 8px;
+  }
+
+  &__footer {
+    margin-top: auto;
   }
 
   &__btn {
@@ -59,6 +71,30 @@
     display: block;
   }
 
+  &__tree-part {
+    position: absolute;
+    bottom: -21px;
+    right: -162px;
+    z-index: 1;
+    display: block;
+  }
+
+  &__tree-part-2 {
+    position: absolute;
+    bottom: -21px;
+    right: -134px;
+    z-index: 1;
+    display: block;
+  }
+
+  &__tree-part-3 {
+    position: absolute;
+    bottom: -32px;
+    right: -140px;
+    z-index: 1;
+    display: block;
+  }
+
   @media (max-width: 991px) {
     &--h-sm {
       min-height: 260px;
@@ -69,6 +105,8 @@
     padding: 20px;
 
     &__bg-img {
+      max-width: 240px;
+
       &--design {
         right: 0;
         max-width: 200px;
@@ -79,10 +117,44 @@
         right: 0;
         max-width: 142px;
       }
+
+      &--glued {
+        bottom: -40px;
+        right: -10px;
+      }
+
+      &--glued-2 {
+        right: -50px;
+      }
+
+      &--profiled {
+        max-width: 180px;
+      }
+
+      &--bathhouse-2 {
+        right: 20px;
+        max-width: 200px;
+      }
+
+      &--painting {
+        max-width: 200px;
+      }
+
+      &--assembly {
+        max-width: 210px;
+      }
     }
 
     &__tree {
       max-width: 212px;
+    }
+
+    &__tree-part {
+      bottom: -65px;
+    }
+
+    &__footer {
+      margin-top: 0;
     }
   }
 }

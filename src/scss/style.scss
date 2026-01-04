@@ -73,6 +73,7 @@
 @use "./components/layouts-slider";
 @use "./components/layouts";
 @use "./components/project-info";
+@use "./components/author-card";
 @use "./components/author-info";
 @use "./components/info-items";
 @use "./components/equipment-item";
@@ -97,4 +98,13 @@
 @use "./components/partner-card";
 @use "./components/partners";
 @use "./components/gallery";
+@use "./components/composition-card";
+@use "./components/composition";
+@use "./components/stage-timeline";
+@use "./components/stages-timeline";
+@use "./components/stage-item";
+@use "./components/stages";
+@use "./components/type-item";
+@use "./components/types";
+@use "./components/features-images";
 @use "./components/footer";

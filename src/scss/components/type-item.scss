@@ -1,0 +1,29 @@
+.type-item {
+  padding: 12px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__num {
+    flex: none;
+    align-self: flex-start;
+    border-radius: 8px;
+  }
+
+  &__title {
+    max-width: 450px;
+  }
+
+  &__header-text {
+    margin-top: 4px;
+  }
+
+  &__text {
+    margin-top: 12px;
+  }
+}

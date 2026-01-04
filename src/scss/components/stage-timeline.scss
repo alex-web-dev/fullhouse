@@ -1,0 +1,119 @@
+.stage-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+
+  &__figures {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__num {
+    position: relative;
+    border-radius: 8px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      transform: translateX(-50%);
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 6px solid var(--color-primary);
+    }
+  }
+
+  &__rect {
+    margin-top: 6px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+
+  &__line {
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: repeating-linear-gradient(to bottom, var(--color-primary) 1px 4px, transparent 4px 8px);
+  }
+
+  &__text {
+    position: absolute;
+    top: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1201px) {
+    &:nth-child(2n) &__num {
+      &:before {
+        bottom: unset;
+        top: -6px;
+        transform: translateX(-50%) rotate(180deg);
+      }
+    }
+
+    &:nth-child(2n) &__figures {
+      order: 2;
+      flex-direction: column-reverse;
+    }
+
+    &:nth-child(2n) &__rect {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    &:nth-child(2n) &__text {
+      top: unset;
+      bottom: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+
+    &__num {
+      &:before {
+        bottom: unset;
+        left: -6px;
+        top: 50%;
+        transform: translate(0, -50%) rotate(90deg);
+      }
+    }
+
+    &__text {
+      margin-left: 8px;
+      position: static;
+    }
+
+    &__figures {
+      flex-direction: row;
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__rect {
+      margin-top: 0;
+      margin-right: 6px;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__text {
+      max-width: 245px;
+    }
+  }
+}

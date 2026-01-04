@@ -5,6 +5,16 @@
   background-color: var(--color-primary);
   overflow: hidden;
 
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(var(--color-white--rgb), 0.1);
+  }
+
   &--h-xl {
     min-height: 500px;
   }
@@ -40,6 +50,24 @@
       right: -95px;
       max-width: none;
     }
+
+    &--design {
+      max-width: none;
+    }
+
+    &--glued {
+      bottom: -123px;
+      right: -151px;
+      max-width: none;
+    }
+
+    &--bathhouse {
+      right: -30px;
+    }
+
+    &--profiled {
+      max-width: none;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -65,6 +93,35 @@
         right: 0px;
         max-width: 400px;
         width: 100%;
+      }
+
+      &--design {
+        max-width: 100%;
+      }
+
+      &--glued {
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+      }
+
+      &--profiled {
+        bottom: -15px;
+        max-width: 380px;
+      }
+
+      &--bathhouse {
+        bottom: -30px;
+        right: 0;
+      }
+
+      &--painting {
+        right: 15px;
+        max-width: 172px;
+      }
+
+      &--assembly {
+        max-width: 183px;
       }
     }
   }

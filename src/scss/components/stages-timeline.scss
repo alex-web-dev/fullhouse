@@ -1,0 +1,163 @@
+.stages-timeline {
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    height: 250px;
+
+    &--mt-xl {
+      margin-top: 80px;
+    }
+
+    &--8 {
+      gap: 17px;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: var(--color-primary-500);
+    }
+
+    &:before {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+
+      &:after {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 4px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:nth-child(2n + 1):not(:first-child) {
+      padding-left: 8px;
+
+      &:after {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:nth-child(2n):not(:last-child) {
+      padding-left: 8px;
+    }
+
+    &--5 {
+      padding-right: 40px;
+    }
+  }
+
+  &__item {
+    margin-top: 59px;
+    width: 163px;
+
+    &:nth-child(2n) {
+      margin-top: 93px;
+    }
+  }
+
+  &__list--8 &__item {
+    &:nth-child(1) {
+      width: 178px;
+    }
+
+    &:nth-child(8) {
+      width: 141px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__list {
+      flex-direction: column;
+      height: auto;
+
+      &--mt-xl {
+        margin-top: 0;
+      }
+
+      &--8 {
+        gap: 32px;
+      }
+
+      &--5 {
+        padding-right: 0;
+      }
+
+      &:before {
+        left: 6px;
+        height: 100%;
+        width: 4px;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      &:not(:first-child) {
+        margin-top: 32px;
+
+        &:after {
+          top: -32px;
+          left: 6px;
+          width: 4px;
+          height: 32px;
+          display: block;
+          transform: translateY(0);
+        }
+      }
+
+      &:nth-child(2n) {
+        flex-direction: column;
+      }
+
+      &:nth-child(2n + 1):not(:first-child) {
+        padding-left: 0;
+
+        &:after {
+          top: -32px;
+          left: 6px;
+          width: 4px;
+          height: 32px;
+          display: block;
+          transform: translateY(0);
+        }
+      }
+
+      &:nth-child(2n):not(:last-child) {
+        padding-left: 0;
+      }
+    }
+
+    &__item {
+      margin-top: 0;
+      width: auto;
+
+      &:nth-child(2n) {
+        margin-top: 0;
+      }
+    }
+
+    &__list--8 &__item {
+      &:nth-child(1),
+      &:nth-child(8) {
+        width: auto;
+      }
+    }
+  }
+}
